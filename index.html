@@ -1,98 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <title></title>
- <meta charset="utf-8">
+header {
+    display: flex;
+    max-width: 100%;
+    height: 50px;
+    border-style: groove;
+}
 
-<link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+.topheader{
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
-</head>
+.topheader .logo img{
+    height: 50px;
+    width: 100px;
+}
 
-<body background="fundo.png">
+.topheader .texto{
+    display: flex;
+    justify-content: center;
+    
+}
 
-    <header class="cabecalho">
-<section class="topheader">
-    <div class="logo">
-        <a><img src="logo.png" alt="logo"></a></div>
+.content{
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+    color: antiquewhite ;
+    font-size: 120%;
+}
 
-<div class="texto">
-    <a href="">Inicio</a>
-    <a href="">Sobre nós</a>
-    <a href="">Redes sociais</a>
-    <a href="">contato</a>
-      </div>
-</section>
-</header>
+.partition1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+border-style: groove;
+}
 
-    <section class="container">
-<div class="content">
-<div class="Partition1"><h1>Educação Financeira para Crianças: Como Ensinar desde Cedo</h1>
-    <h2><p>Introdução:</h2>
-    A educação financeira é uma habilidade essencial para a vida, e quanto mais cedo for introduzida, maior será a probabilidade de as crianças se tornarem adultos financeiramente responsáveis. Ensinar os pequenos sobre dinheiro, poupança e consumo consciente não só os ajuda a entender o valor das coisas, mas também a desenvolver hábitos saudáveis para o futuro. Neste artigo, vamos explorar dicas práticas para os pais ensinarem educação financeira aos filhos desde cedo.
-    
-    <h3>1. Comece com Conceitos Básicos</h3>
-    <p>Explique de forma simples o que é dinheiro e para que ele serve.
-    
-    Use exemplos do dia a dia, como comprar pão no mercado ou pagar uma conta de luz.
-    
-    Mostre as diferentes cédulas e moedas e explique como elas são usadas.
+h1{margin-top: 50px;}
 
-    <img src="imagem1.jpg">
-    
-    <h3>2. Ensine a Diferença entre Necessidades e Desejos</h3>
-    <p>Ajude as crianças a entender a diferença entre o que é essencial (comida, roupas, moradia) e o que é supérfluo (brinquedos, guloseimas).
-    
-    Use situações reais para ilustrar, como escolher entre comprar um lanche na escola ou guardar o dinheiro para algo maior.
-    
-    <h3>3. Introduza o Conceito de Poupança</h3>
-    <p>Dê um cofrinho para a criança e incentive-a a guardar uma parte da mesada ou do dinheiro que recebe de presentes.
-    
-    Estabeleça metas de curto prazo, como economizar para comprar um brinquedo, para que ela veja os resultados de suas escolhas.
-    
-    <h3>4. Dê Mesada como Ferramenta de Aprendizado</h3>
-    <p>A mesada pode ser uma ótima maneira de ensinar as crianças a gerenciar seu próprio dinheiro.
-    
-    Defina uma quantia adequada à idade e combine regras claras, como quanto deve ser poupado e quanto pode ser gasto.
-    
-    Use a mesada para ensinar sobre planejamento e prioridades.
-    
-    <h3>5. Envolva as Crianças nas Decisões Financeiras da Família</h3>
-    <p>Leve-as ao supermercado e mostre como comparar preços e escolher produtos dentro do orçamento.
-    
-    Explique decisões financeiras simples, como por que optar por um produto mais barato ou adiar uma compra para economizar.
-    
-    <h3>6. Ensine sobre Consumo Consciente</h3>
-    <p>Mostre a importância de pensar antes de comprar e evitar desperdícios.
-    
-    Incentive a doação de brinquedos e roupas que não são mais usados, reforçando o valor de compartilhar e reutilizar.
-    
-    <h3>7. Use Jogos e Atividades Lúdicas</h3>
-    <p>Jogos de tabuleiro como Banco Imobiliário ou Monopoly podem ensinar sobre investimentos, gastos e planejamento.
-    
-    Aplicativos e jogos digitais também podem ser úteis para ensinar conceitos financeiros de forma divertida.
-    
-    <h3>8. Dê o Exemplo</h3>
-    <p>As crianças aprendem muito observando os pais. Mostre comportamentos financeiros saudáveis, como evitar compras por impulso e manter um orçamento organizado.
-    
-    Converse abertamente sobre como você toma decisões financeiras em casa.
-    
-    <h3>9. Ensine sobre Empreendedorismo</h3>
-    <p>Incentive a criança a pensar em formas de ganhar dinheiro, como vender limonada, fazer bijuterias ou oferecer serviços simples, como ajudar vizinhos.
-    
-    Isso ajuda a desenvolver criatividade e noção de valor do trabalho.
-    
-    <h3>10. Fale sobre Investimentos de Forma Simples</h3>
-    <p>Para crianças mais velhas, introduza conceitos básicos de investimentos, como poupança, juros e como o dinheiro pode "crescer" ao longo do tempo.
-    
-    Use exemplos simples, como guardar dinheiro em um cofrinho e receber um "juro" simbólico dos pais.
-    
-    <p>Conclusão:
-    Ensinar educação financeira para crianças desde cedo é um presente que os pais podem dar para garantir um futuro mais seguro e consciente. Com paciência, exemplos práticos e atividades lúdicas, é possível transformar conceitos complexos em lições simples e divertidas. Comece hoje mesmo e prepare seu filho para ser um adulto financeiramente responsável!</div>
+.partition1 .img1{
+    height: 120px;
+    max-width: 100%;
+}
 
+img{
+    height: 120px;
+    width: 250px;
+}
 
-</div>
-    </section>
-
-</body>
-
-</html>
+.barra{
+    border-style: groove;
+    height: 50px;
+    max-width: 100%;
+}
