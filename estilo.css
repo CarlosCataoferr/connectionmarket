@@ -26,7 +26,8 @@ header {
 
 .content{
     display: flex;
-    height: 1200px;
+    max-height: 100%;
+    max-width: 100%;
     text-align: center;
     color: antiquewhite ;
     font-size: 120%;
@@ -34,14 +35,27 @@ header {
 
 .partition1{
     display: flex;
-    height: 1000px;
-    width: 500px;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 border-style: groove;
 }
 
 h1{margin-top: 50px;}
 
+.partition1 .img1{
+    height: 120px;
+    max-width: 100%;
+}
+
 img{
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 250px;
+}
+
+.barra{
+    border-style: groove;
+    height: 50px;
+    max-width: 100%;
 }
