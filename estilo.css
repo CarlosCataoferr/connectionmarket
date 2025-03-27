@@ -1,61 +1,81 @@
-header {
-    display: flex;
-    max-width: 100%;
-    height: 50px;
-    border-style: groove;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.topheader{
-    max-height: 100%;
+header{
+    max-width: 100%;
+    background-color: #424147;
+}
+
+.top-header{
+    background-color: white;
+    padding: 20px 4%;
+}
+
+.top-header .logotipo img{
+    max-width: 240px;
+}
+
+.top-header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 
-.topheader .logo img{
+.top-header .btn-social button{
+    width: 50px;
     height: 50px;
-    width: 100px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
-.topheader .texto{
+.bottom-header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bottom-header nav ul li a{
+    color: #fff;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.bottom-header nav ul li a:hover{
+background-color: #ed6886;
+color: #424147;
+box-shadow: inset 0 0 #0000008a;
+}
+
+.partition ul{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.partition ul li{
+    padding: 20px 20px;
+}
+
+.container img{
+    height: 100px;
+}
+
+.container figcaption{
     display: flex;
     justify-content: center;
-    
+    align-items: center;
 }
 
-.content{
-    display: flex;
-    max-height: 100%;
-    max-width: 100%;
-    text-align: center;
-    color: antiquewhite ;
-    font-size: 120%;
-}
-
-.partition1{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-border-style: groove;
-}
-
-h1{margin-top: 50px;}
-
-.partition1 .img1{
-    height: 120px;
-    max-width: 100%;
-}
-
-img{
-    height: 120px;
-    width: 250px;
-}
-
-.barra{
-    border-style: groove;
-    height: 50px;
-    max-width: 100%;
+.container .product{
+    border-radius: 50%;
+    border: 1px solid black;
 }
