@@ -1,185 +1,249 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header{
+/* HEADER STYLES */
+header {
     max-width: 100%;
     background-color: #424147;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.top-header{
+.top-header {
     background-color: white;
     padding: 20px 4%;
 }
 
-.top-header .logotipo img{
+.top-header .logotipo img {
     max-width: 240px;
+    height: auto;
 }
 
-.top-header > .interface{
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.top-header > .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.top-header .btn-social button{
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
+.top-header .btn-social button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid black;
     cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease;
 }
 
-.bottom-header nav ul{
+.top-header .btn-social button:hover {
+    background-color: #ed6886;
+    color: white;
+    border-color: #ed6886;
+}
+
+.bottom-header nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style-type: none;
 }
 
-.bottom-header nav ul li a{
+.bottom-header nav ul li a {
     color: #fff;
-    padding: 20px 40px;
+    padding: 20px 25px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     display: block;
-    transition: .2s;
+    transition: 0.2s;
 }
 
-.bottom-header nav ul li a:hover{
-background-color: #ed6886;
-color: #424147;
-box-shadow: inset 0 0 #0000008a;
+.bottom-header nav ul li a:hover {
+    background-color: #ed6886;
+    color: #424147;
+    box-shadow: inset 0 0 #0000008a;
 }
 
-.drop-hover{
+.drop-hover {
     position: relative;
 }
 
-.drop-hover .drop{
+.drop-hover:hover .drop {
+    display: block;
+}
+
+.drop-hover .drop {
     position: absolute;
+    background-color: #5b5a5f;
+    width: 100%;
+    display: none;
+    z-index: 1;
 }
 
-.partition ul{
-    justify-content: space-around;
+.drop-hover .drop a {
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.drop-hover .drop a:hover {
+    background-color: #ed6886;
+}
+
+/* LAYOUT PRINCIPAL COM ADVERTISEMENT */
+.main-content {
+    display: flex;
+    min-height: 80vh;
+}
+
+.ad-container {
+    width: 300px;
+    min-width: 300px;
+    background: #f0f0f0;
+    padding: 20px;
+    position: sticky;
+    top: 82px;
+    height: calc(100vh - 82px);
+    overflow-y: auto;
+}
+
+.ad-space {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #e0e0e0;
     display: flex;
     align-items: center;
-    list-style-type: none;
-}
-
-.partition ul li{
-    padding: 20px 20px;
-}
-
-.container img{
-    height: 100px;
-}
-
-.container figcaption{
-    display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    border: 1px dashed #999;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.ad-placeholder {
+    text-align: center;
+    color: #666;
 }
 
-header{
-    max-width: 100%;
+.container {
+    flex: 1;
+    padding: 40px 4%;
+    background-color: #f5f5f5;
+}
+
+/* CATALOG STYLES */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.product {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* ... (mantenha o resto do CSS do catálogo como estava anteriormente) ... */
+
+/* FOOTER STYLES */
+.footer {
     background-color: #424147;
-}
-
-.top-header{
-    background-color: white;
+    color: white;
     padding: 20px 4%;
+    text-align: center;
 }
 
-.top-header .logotipo img{
-    max-width: 240px;
+.footer p {
+    margin: 0;
 }
 
-.top-header > .interface{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 1024px) {
+    .ad-container {
+        width: 250px;
+        min-width: 250px;
+    }
+    
+    .ad-space {
+        height: 500px;
+    }
 }
 
-.top-header .btn-social button{
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid black;
-    cursor: pointer;
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .ad-container {
+        width: 100%;
+        position: static;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .ad-space {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .top-header > .interface {
+        flex-direction: column;
+    }
+    
+    .top-header .btn-social {
+        margin-top: 15px;
+    }
+    
+    .bottom-header nav ul {
+        flex-wrap: wrap;
+    }
+    
+    .bottom-header nav ul li a {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    .catalogo {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
 }
 
-.bottom-header nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-}
-
-.bottom-header nav ul li a{
-    color: #fff;
-    padding: 20px 40px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.bottom-header nav ul li a:hover{
-background-color: #ed6886;
-color: #424147;
-box-shadow: inset 0 0 #0000008a;
-}
-
-.partition ul{
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-}
-
-.partition ul li{
-    padding: 20px 20px;
-}
-
-.partition1 ul{
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-}
-
-.partition1 ul li{
-    padding: 20px 20px;
-}
-
-.partition2 ul{
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-}
-
-.partition2 ul li{
-    padding: 20px 20px;
-}
-
-.container img{
-    height: 100px;
-}
-
-.container figcaption{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 480px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+    
+    .bottom-header nav ul li a {
+        padding: 10px 15px;
+    }
 }
