@@ -46,6 +46,93 @@ header{
     padding: 20px 40px;
     text-decoration: none;
     font-size: 20px;
+    display: block;
+    transition: .2s;
+}
+
+.bottom-header nav ul li a:hover{
+background-color: #ed6886;
+color: #424147;
+box-shadow: inset 0 0 #0000008a;
+}
+
+.drop-hover{
+    position: relative;
+}
+
+.drop-hover .drop{
+    position: absolute;
+}
+
+.partition ul{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.partition ul li{
+    padding: 20px 20px;
+}
+
+.container img{
+    height: 100px;
+}
+
+.container figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    max-width: 100%;
+    background-color: #424147;
+}
+
+.top-header{
+    background-color: white;
+    padding: 20px 4%;
+}
+
+.top-header .logotipo img{
+    max-width: 240px;
+}
+
+.top-header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header .btn-social button{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.bottom-header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bottom-header nav ul li a{
+    color: #fff;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .bottom-header nav ul li a:hover{
